@@ -34,6 +34,11 @@ git push -u origin master
 git remote add origin https://github.com/ThelemeGrand/GitStudy.git
 git push -u origin master
 
+# 克隆仓库的命令
+git clone https://github.com/ThelemeGrand/GitStudy.git
+# 克隆到指令新的目录
+git clone https://github.com/ThelemeGrand/GitStudy.git newfolder
+
 ###### end #######
 
 ###### 版本控制 ######
