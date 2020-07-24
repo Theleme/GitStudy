@@ -9,6 +9,8 @@ git config --list
 # 修改
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+# 保存用户名密码
+git config --global credential.helper store 
 
 # 获取帮助（找到 Git 命令的综合手册（manpage）：）
 git <verb> --help
