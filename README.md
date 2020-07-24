@@ -54,3 +54,14 @@ git add LICENSE
 # 提交到仓库
 git commit -m '******'
 
+# 检查当前文件状态
+git status
+# 状态简览
+git status --short
+
+# 查看已暂存和未暂存的修改
+# 比较的是工作目录中当前文件和暂存区域快照之间的差异。 也就是修改之后还没有暂存起来的变化内容
+git diff
+# 查看已暂存的将要添加到下次提交里的内容, 也就是比对已暂存文件与最后一次提交的文件差异
+git diff --staged
+git diff --cached
