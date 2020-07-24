@@ -41,6 +41,9 @@ git clone https://github.com/ThelemeGrand/GitStudy.git
 # 克隆到指令新的目录
 git clone https://github.com/ThelemeGrand/GitStudy.git newfolder
 
+# 直接提交（已经配置好）
+git push origin master
+
 ###### end #######
 
 ###### 版本控制 ######
