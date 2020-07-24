@@ -67,3 +67,6 @@ git diff
 # 查看已暂存的将要添加到下次提交里的内容, 也就是比对已暂存文件与最后一次提交的文件差异
 git diff --staged
 git diff --cached
+
+# 跳过使用暂存区域
+git commit -a -m '****'
