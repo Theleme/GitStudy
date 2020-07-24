@@ -5,7 +5,7 @@ git config --list
 
 # 使用git config 查看或修改配置，使用--global全局修改
 # 查看
-git config --global user.name
+git config --list
 # 修改
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
