@@ -71,5 +71,14 @@ git diff
 git diff --staged
 git diff --cached
 
-# 跳过使用暂存区域
+# 跳过使用暂存区域, 直接提交
 git commit -a -m '****'
+
+# 删除文件
+git rm test.md
+# 要删除之前修改过或已经放到暂存区的文件，则必须使用强制删除选项 -f
+git rm test.md -f
+# 把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中
+git rm --cached test.md
+
+# 移动文件
