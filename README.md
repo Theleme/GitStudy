@@ -82,3 +82,8 @@ git rm test.md -f
 git rm --cached test.md
 
 # 移动文件
+git mv file_from file_to
+# 直接手动删除文件显示：file_from删除，file_to添加。相当于运行三条命令
+mv file_from file_to
+git rm file_from
+git add file_to
