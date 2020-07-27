@@ -106,5 +106,8 @@ git log --since=2.weeks
 ![logOrder](imgs/logOrder.jpg)
 ![logLimit](imgs/logLimit.jpg)
 
-#
+# 重新提交
 git commit --amend
+
+# 取消暂存的文件
+git reset HEAD <file>...
