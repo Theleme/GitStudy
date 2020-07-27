@@ -87,3 +87,17 @@ git mv file_from file_to
 mv file_from file_to
 git rm file_from
 git add file_to
+
+# 查看提交历史
+git log
+# 显示每次提交所引入的差异（按 补丁 的格式输出）
+git log --patch
+# 只显示最近的两次提交
+git log -p -2
+# 每次提交的简略统计信息
+git log --stat
+# 使用不同于默认格式的方式展示提交历史, oneline 会将每个提交放在一行显示
+git log --pretty=oneline
+git log --pretty=format
+git log --pretty=format:"%h - %an, %ar : %s"
+![Image text](imgs/prettyFormat.jpg)
