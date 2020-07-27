@@ -81,7 +81,7 @@ git rm test.md -f
 # 把文件从 Git 仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中
 git rm --cached test.md
 
-# 移动文件
+# 移动文件(重命名)
 git mv file_from file_to
 # 直接手动删除文件显示：file_from删除，file_to添加。相当于运行三条命令
 mv file_from file_to
@@ -111,3 +111,32 @@ git commit --amend
 
 # 取消暂存的文件
 git reset HEAD <file>...
+
+# 撤消对文件的修改
+git restore <file>...
+
+# 查看远程仓库
+# (如果你已经克隆了自己的仓库，那么至少应该能看到 origin ——这是 Git 给你克隆的仓库服务器的默认名字)
+git remote
+# 显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL
+git remote -v
+# 添加一个新的远程 Git 仓库
+git remote add <shortname> <url>
+
+# 从远程仓库中抓取与拉取
+git fetch <remote>
+#### 必须注意 git fetch 命令只会将数据下载到你的本地仓库——它并不会自动合并或修改你当前的工作。 当准备好时你必须手动将其合并入你的工作
+# 自动抓取后合并该远程分支到当前分支
+git pull
+
+# 推送到远程仓库
+git push <remote> <branch>
+
+# 查看某个远程仓库
+git remote show <remote>
+
+# 远程仓库的重命名与移除
+git remote rename old_name new_name
+# 移除一个远程仓库
+git remote remove
+git remote rm
