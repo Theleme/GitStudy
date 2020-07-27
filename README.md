@@ -102,6 +102,6 @@ git log --pretty=format
 git log --pretty=format:"%h - %an, %ar : %s"
 # 列出最近两周的所有提交
 git log --since=2.weeks
-![Image text](imgs/prettyFormat.jpg)
-![Image text](imgs/logOrder.jpg)
-![Image text](imgs/logLimit.jpg)
+![prettyFormat](imgs/prettyFormat.jpg)
+![logOrder](imgs/logOrder.jpg)
+![logLimit](imgs/logLimit.jpg)
