@@ -106,4 +106,5 @@ git log --since=2.weeks
 ![logOrder](imgs/logOrder.jpg)
 ![logLimit](imgs/logLimit.jpg)
 
-qqqqq
+#
+git commit --amend
