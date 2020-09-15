@@ -55,6 +55,9 @@ git init
 git add .
 git add *.md
 git add LICENSE
+# warning: LF will be replaced by CRLF in 
+# windows中的换行符为 CRLF， 而在linux下的换行符为LF，所以在执行add . 时出现提示
+git config --global core.autocrlf false
 
 # 提交到仓库
 git commit -m '******'
@@ -131,6 +134,7 @@ git pull
 
 # 推送到远程仓库
 git push <remote> <branch>
+git push origin master
 
 # 查看某个远程仓库
 git remote show <remote>
