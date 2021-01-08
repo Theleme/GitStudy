@@ -51,6 +51,11 @@ git push origin master
 # 对项目目录添加git版本控制
 git init
 
+# 忽略文件的改动，但是不加入.gitignore 文件中，这样可以达到仅在本地目录中忽略，不影响其他团队成员的工作。
+git update-index --assume-unchanged 文件名
+## 上一个命令的逆操作，重新追踪文件改动。
+git update-index --no-assume-unchanged 文件名
+
 # 指定添加文件（添加所有、某一类型、某一文件）
 git add .
 git add *.md
@@ -140,3 +145,5 @@ git remote rename old_name new_name
 # 移除一个远程仓库
 git remote remove
 git remote rm
+
+
