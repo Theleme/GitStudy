@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 通过以下命令查看所有的配置以及它们所在的文件
 git config --list --show-origin
 # 列出所有 Git 当时能找到的配置
@@ -52,7 +51,7 @@ git push origin master
 # 对项目目录添加git版本控制
 git init
 
-# 忽略文件的改动，但是不加入.gitignore 文件中，这样可以达到仅在本地目录中忽略，不影响其他团队成员的工作。
+# 忽略文件的改动，但是不加入.gitignore 文件中，这样可以达到仅在本地目录中忽略，不影响其他团队成员的工作。（注意大小写）
 git update-index --assume-unchanged 文件名
 ## 上一个命令的逆操作，重新追踪文件改动。
 git update-index --no-assume-unchanged 文件名
@@ -148,7 +147,6 @@ git remote remove
 git remote rm
 
 
-=======
 # 通过以下命令查看所有的配置以及它们所在的文件
 git config --list --show-origin
 # 列出所有 Git 当时能找到的配置
@@ -162,6 +160,8 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 # 保存用户名密码
 git config --global credential.helper store 
+# 修改当前仓储用户名密码
+git remote set-url origin https://Theleme:xinyong19960324@github.com/Theleme/GitStudy.git
 
 # 获取帮助（找到 Git 命令的综合手册（manpage）：）
 git <verb> --help
@@ -208,7 +208,10 @@ git add *.md
 git add LICENSE
 # warning: LF will be replaced by CRLF in 
 # windows中的换行符为 CRLF， 而在linux下的换行符为LF，所以在执行add . 时出现提示
+## 全局
 git config --global core.autocrlf false
+## 当前
+git config core.autocrlf false
 
 # 提交到仓库
 git commit -m '******'
@@ -295,4 +298,3 @@ git remote rename old_name new_name
 # 移除一个远程仓库
 git remote remove
 git remote rm
->>>>>>> 798497fc014dd6a6773766e4ff5542a1290e2f5a
